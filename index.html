@@ -10,21 +10,21 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <!-- <link href="assets-og/img/favicon.png" rel="icon"> -->
-  <!-- <link href="assets-og/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets-og/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets-og/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets-og/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets-og/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets-og/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets-og/css/style.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,15 +33,14 @@
   <header id="header" class="fixed-top header-transparent">
     <div class="container d-flex align-items-center justify-content-between">
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets-og/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#playlists">Playlists</a></li>
-          <li><a class="nav-link scrollto" href="#song_suggestions">Song Suggestions</a></li>
           <li><a class="nav-link scrollto" href="#blog">Blog</a></li>
           <li><a class="nav-link scrollto " href="#about">About</a></li>
+          <li><a class="nav-link scrollto active" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -109,21 +108,21 @@
   <script>
     let currentBackgroundIndex = 0;
     const backgrounds = [
-      "url('assets-og/img/gallery/Daya.jpg') center center",
-      "url('assets-og/img/gallery/Jon-Foreman.jpg') center center",
-      "url('assets-og/img/gallery/Macklemore.jpg') center center",
-      "url('assets-og/img/gallery/Tenille-Townes.jpg') center center",
-      "url('assets-og/img/gallery/hero.png') center top/cover" // Remove 'no-repeat' and 'center top/cover'
+      "url('assets/img/gallery/Daya.jpg') center center",
+      "url('assets/img/gallery/Jon-Foreman.jpg') center center",
+      "url('assets/img/gallery/Macklemore.jpg') center center",
+      "url('assets/img/gallery/Tenille-Townes.jpg') center center",
+      "url('assets/img/gallery/hero.png') center top/cover" // Remove 'no-repeat' and 'center top/cover'
       // Add more background URLs as needed
     ];
     
-    const textContents = [
-      "New Text-0",
-      "New Text-1", // Text for the second image
-      "New Text-2", // Text for the third image
-      "New Text-3", // Text for the fourth image
-      "", // No text on the fifth image
-    ];
+    // const textContents = [
+    //   "New Text-0",
+    //   "New Text-1", // Text for the second image
+    //   "New Text-2", // Text for the third image
+    //   "New Text-3", // Text for the fourth image
+    //   "", // No text on the fifth image
+    // ];
     const hero = document.getElementById('hero');
     const heroTitle = document.getElementById('hero-title');
     const heroDescription = document.getElementById('hero-description');
@@ -140,10 +139,8 @@
     
     function changeAutoBackground() {
       currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
-      
-
       hero.style.background = backgrounds[currentBackgroundIndex];
-      heroTitle.innerText = textContents[currentBackgroundIndex];
+      // heroTitle.innerText = textContents[currentBackgroundIndex];
     }
     
     function changeBackground(direction) {
@@ -161,7 +158,7 @@
       }
       
       hero.style.background = backgrounds[currentBackgroundIndex];
-      heroTitle.innerText = textContents[currentBackgroundIndex];
+      // heroTitle.innerText = textContents[currentBackgroundIndex];
     }
   </script>
   
@@ -179,10 +176,7 @@
             <br>
             <h2 class="text-center"><b>For the Perceptive Music Listener</b></h2>
             <p style="font-size: larger;">
-              Hey guys, welcome! Through The Noise exists to promote substantial music that adds value to the listener.
-              Too often we hear songs that elevate complacency amidst our complex world so, in my playlists and blog, you will find none of that. 
-              Instead, I want to show you music that adds something meaningful to the world rather than joining the rest of the commotion. 
-              We’re cutting Through The Noise.
+              INSERT TEXT HERE (text for the mission statement)
             </p>
           </div>
         </div>
@@ -190,322 +184,7 @@
     </section><!-- End Mission Statement Section -->
 
     
-
-    <section id="playlists" class="testimonials portfolio">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Playlists</h2>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-                <a href="https://open.spotify.com/playlist/7kUKgCDDXLpa66UpaM0Leu?si=45938cda4a494373&pt_success=1">
-                  <img src="assets-og/img/playlist-covers/gods-heart-temp-cover.png.webp" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>God's Heart</h4>
-                    <p>There’s a difference between being nice and actively loving someone</p>
-                    <a href="assets-og/img/playlist-covers/gods-heart-temp-cover.png.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"></a>
-                  </div>
-                </a>
-            </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/4Di5IsYCajonFkImARCwAv?si=7aadefd21b924ff5&pt=997935e0a945954321cb0b998aea0c2f">
-                <img src="assets-og/img/playlist-covers/hip-hop-temp-cover.png.webp" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Bars of Gold</h4>
-                  <p>Lyrical geniuses who don’t rap the status quo</p>
-                  <a href="assets-og/img/playlist-covers/hip-hop-temp-cover.png.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-                </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/2xnTXLKnpq6J1D1TCD2nuX?si=4290fb5265bf4d08&pt=c306a2d6ea8f8daaabbf252ea35a7cf7">
-                <img src="assets-og/img/playlist-covers/if-feeling-country-temporary-cover.png.webp" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>If feeling country</h4>
-                  <p>Country music can be deeper than girls, trucks, and beer</p>
-                  <a href="assets-og/img/playlist-covers/if-feeling-country-temporary-cover.png.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/0k5P7lqmYG47xCqivUqcNV?si=8bfed957cdc6435d&pt=09d4c2e67df443289043307aa799b6e7">
-                <img src="assets-og/img/playlist-covers/just-fun-temporary-cover.png.webp" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Just Fun</h4>
-                  <p>Not all art has to be serious; relax and just have fun</p>
-                  <a href="assets-og/img/playlist-covers/just-fun-temporary-cover.png.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/5cNbsidKCHWPyzfQqGIlfT?si=1a46f3106d3d4e23&pt=ad87f217e9ca9d6efa2ec7a9061cb172">
-                <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/coming-back-to-God.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Coming back to God</h4>
-                  <p>Explain here </p> 
-                  <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/coming-back-to-God.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/7qpy5d05xjxJoH43DMnv4F?si=0f13eb4113d34078&pt=1dbca97dbce5175be952f7981c26de84">
-                <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/loss.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Loss</h4>
-                  <p>Explain here </p>
-                  <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/loss.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/7282aAdFemmtFLLFfxIyLG?si=1be723feeefc4c7e">
-                <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/rock n roll.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Rock 'n roll</h4>
-                  <p>Explain here </p> 
-                  <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/rock n roll.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/2XzSIyh1fWzi2TWbbucPYO?si=d5b1c569d18741ce">
-                <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/pop-ular.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Pop-ular</h4>
-                  <p>Explain here </p> 
-                  <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/pop-ular.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="portfolio-item filter-app">
-                <a href="https://open.spotify.com/playlist/6OxwJHFO0sFPvHbF87u9Nz?si=ab5ad74c211d459d&pt=cc3f1b0ad4d9263b41cdf7c4174f678f">
-                  <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/rock.png" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Rock</h4>
-                    <p>Explain here </p> 
-                    <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/rock.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                    <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                  </div>
-                </a>
-                </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="portfolio-item filter-app">
-                  <a href="https://open.spotify.com/playlist/6OxwJHFO0sFPvHbF87u9Nz?si=ab5ad74c211d459d&pt=cc3f1b0ad4d9263b41cdf7c4174f678f">
-                    <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/blog-songs.png" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                      <h4>Blog Songs</h4>
-                      <p>Explain here </p> 
-                      <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/blog-songs.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                      <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                    </div>
-                    </a>
-                  </div>
-                  </div>
-            </div><!-- End testimonial item -->
-          </div>
-          
-          
-        </div>
-
-      </div>
-      <div class="container">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-                <a href="https://open.spotify.com/playlist/795C2uUQP3g28PBHiGBapK?si=0ff2f24186e54a7d&pt=ba28657eead5d01f366b12edc3c42502">
-                  <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/worship.png" class="img-fluid" alt="">
-                  <div class="portfolio-info">
-                    <h4>Worship</h4>
-                    <p>Explain here </p> 
-                    <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/worship.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                    <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                  </div>
-                </a>
-                </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/3TOnSM5AaW7iSnAxT0yNbn?si=84568e3259eb4017&pt=f0bc84254b300c093352a42d09c2059b">
-                <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/power of optimism.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Power of Optimism</h4>
-                  <p>Explain here </p> 
-                  <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/power of optimism.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/7JJiUfoLPlNox5xUXoig21?si=cc383014032e4e2d&pt=a1e48c4c561cb2256dde8ee22c45ebf0">
-                <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/dont waste time.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Don't Waste Time</h4>
-                  <p>Explain here </p> 
-                  <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/dont waste time.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/5mHfUq39OfTVEWBRc68Ro7?si=9cf2e8e5823b4548&pt=d8539a20d59c57168097c983ceb060ed">
-                <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/departures.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Departures</h4>
-                  <p>Explain here </p> 
-                  <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/departures.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/73ObpynEixoo7LY3aDUtXu?si=4fcaa6cedd7448f6&pt=fdcab0ea6715519a4527a9fffa360229">
-                <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/unity.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Unity</h4>
-                  <p>Explain here </p> 
-                  <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/unity.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/3jDqLOSovkFn4bjvVbsH5B?si=79c16caf4e2e475d&pt=aa932d1acf554f37a8593bcbebf2c3cc">
-                <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/anxiety.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Anxiety</h4>
-                  <p>Explain here </p> 
-                  <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/anxiety.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/3upJQTipYI8pAuz4Ew7GdF?si=9672dda0b36e4fa7&pt=8140fbab1da05b675ecd4cd69c61efb9">
-                <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/when darkness surrounds.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>When Darkness Surrounds</h4>
-                  <p>Explain here </p> 
-                  <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/when darkness surrounds.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/00UgVcobma5gxSkS84Xj0S?si=75755c1235ba4c4a&pt=20b91fdd3820e43e7d5916f4fb5a6268">
-                <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/insecurity.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Insecurity</h4>
-               
-                  <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/insecurity.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/7K1m8tFQiA7dcpvvVsi3mk?si=c8b04ed41cac4268&pt=2c677b7a269b48ed58a4fc735112e619">
-                <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/when u need it.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>When u need it</h4> 
-                  <p>Explain here </p> 
-                  <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/when u need it.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="portfolio-item filter-app">
-              <a href="https://open.spotify.com/playlist/6sScVqYNbBmvheLileShX9?si=2b62741f48f94473">
-                <img src="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/songs abt Jesus.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>songs abt Jesus</h4>
-                  <p>Explain here </p> 
-                  <a href="./assets-og/img/playlist-covers/Plain-temp-playlist-covers/songs abt Jesus.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
-                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
-                </div>
-              </a>
-              </div>
-            </div><!-- End testimonial item -->
-          </div>
-          
-          
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-    <br>
-
-    <section id="song_suggestions">
-      <div class="section-title">
-        <h2>Song Suggestions</h2>
-      </div>
-      <div class="form-container">
-        <!-- change "action" below to https://fabform.io/f/{ndd5Hsi} -->
-        <form action="https://fabform.io/f/ndd5Hsi" method="post"> 
-          <label for="name">Name</label>
-          <input name="name" type="text" required>
-          <label for="email">Email</label>
-          <input name="email" type="email" required>
-          <label for="songSuggestion">Song Suggestion(s)</label>
-          <textarea name="songSuggestion" rows="4" required></textarea>
-          <button class="button is-link" type="submit">Submit</button>
-        </form>
-      </div>
-    </section>
-  
-    <br>
-    <br>
-    
-    
-    
-    <!-- ======= Testimonials Section ======= -->
-    <section id="blog" class="testimonials">
+    <section id="blog" class="testimonials portfolio">
       <div class="container">
 
         <div class="section-title">
@@ -516,176 +195,115 @@
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <h3>Out of Line is In Line</h3>
-                <h4>4 minute read</h4>
-                <br>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I hope at this point in your relationship with Through The Noise you’ve had a chance to look at the playlists that I’ve curated. 
-                  If you’ve done so, you noticed a country playlist, then a hip-hop playlist, and then one centered on actively loving others. 
-                  But then you eventually stumbled across one…
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  <br>
-                  <br>
-                  <a href="./blog-posts/out-of-line.html">
-                    <button>read more</button>
-                  </a>
-                  
-                </p>
-              </div>
+              <div class="portfolio-item filter-app">
+                <a href="./blog-posts/out-of-line.html">
+                  <img src="assets/img/playlist-covers/gods-heart-temp-cover.png.webp" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Out of Line is In Line</h4>
+                    <p>4 minute read</p>
+                    <a href="assets/img/playlist-covers/gods-heart-temp-cover.png.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"></a>
+                  </div>
+                </a>
+            </div>
             </div><!-- End testimonial item -->
-            
-
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <h3>You're Being Manipulated</h3>
-                <h4>3 minute read</h4>
-                <br>
-                <br>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I’m curious: when you think of the word manipulation, what comes to mind? Do you think of a toxic relationship? 
-                  Do you think of an intrusive salesman? Or do you think of the puppy eyes you used to give your parents when you wanted to have a piece of your Easter candy?…
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  <br>
-                  <br>
-                  <a href="./blog-posts/your-being-manipulate.html">
-                    <button>read more</button>
-                  </a>
-                </p>
-                
-              </div>
+              <div class="portfolio-item filter-app">
+              <a href="./blog-posts/your-being-manipulate.html">
+                <img src="assets/img/playlist-covers/hip-hop-temp-cover.png.webp" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>You're Being Manipulated</h4>
+                  <p>3 minute reado</p>
+                  <a href="assets/img/playlist-covers/hip-hop-temp-cover.png.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"></a>
+                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
+                </div>
+                </div>
             </div><!-- End testimonial item -->
-
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <h3>"Experiencing Homelessness""</h3>
-                <h4>4 minute read</h4>
-                <br>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  2020 sucked for many reasons and for many people. But as a result of being locked up in my house for several months, I found so many cool artists of whom I am now a huge fan. 
-                  Most notably, I discovered Tenille Townes.  After my cousin recommended her music to me, I…
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  <br>
-                  <br>
-                  <a href="./blog-posts/experiencing-homelessness.html">
-                    <button>read more</button>
-                  </a>
-                </p>
-                
+              <div class="portfolio-item filter-app">
+              <a href="./blog-posts/experiencing-homelessness.html">
+                <img src="assets/img/playlist-covers/if-feeling-country-temporary-cover.png.webp" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Experiencing Homelessness</h4>
+                  <p>4 minute read</p>
+                  <a href="assets/img/playlist-covers/if-feeling-country-temporary-cover.png.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"></a>
+                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
+                </div>
+              </a>
               </div>
             </div><!-- End testimonial item -->
-
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <h3>ArtGPT?</h3>
-                <h4>4 minute read</h4>
-                <br>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  So I have this friend who’s way smarter than me—like going to Carnegie Mellon University for his masters in computer science smart. 
-                  His big interest is artificial intelligence (AI) so he was pretty pumped this past fall. He called me up to tell me about this program that could spit out a…
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  <br>
-                  <br>
-                  <a href="./blog-posts/art-gpt.html">
-                    <button>read more</button>
-                  </a>
-                </p>
-                
+              <div class="portfolio-item filter-app">
+              <a href="./blog-posts/art-gpt.html">
+                <img src="assets/img/playlist-covers/just-fun-temporary-cover.png.webp" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>ArtGPT?</h4>
+                  <p>4 minute read</p>
+                  <a href="assets/img/playlist-covers/just-fun-temporary-cover.png.webp" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
+                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
+                </div>
+              </a>
               </div>
             </div><!-- End testimonial item -->
-
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <h3>Embracing Negativity</h3>
-                <h4>4 minute read</h4>
-                <br>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  When I was in middle school I started hearing the name NF buzz around quite a bit. 
-                  At the time he had probably only released Mansion and Therapy Session, and while a lot of my friends listened to him, it just didn’t stick for me. 
-                  I remember one time in eighth grade…
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i> 
-                  <br>
-                  <br>
-                  <a href="./blog-posts/embracing-negativity.html">
-                    <button>read more</button>
-                  </a>
-                </p>
-                
+              <div class="portfolio-item filter-app">
+              <a href="./blog-posts/embracing-negativity.html">
+                <img src="./assets/img/playlist-covers/Plain-temp-playlist-covers/coming-back-to-God.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Embracing Negativity</h4>
+                  <p>4 minute read</p> 
+                  <a href="./assets/img/playlist-covers/Plain-temp-playlist-covers/coming-back-to-God.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
+                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
+                </div>
+              </a>
               </div>
             </div><!-- End testimonial item -->
-            
-
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <h3>What do you need?</h3>
-                <h4>5 minute read</h4>
-                <br>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  In case you haven’t heard, Macklemore released a new, “self-titled” album on Friday so I was very excited when I had a 4-hour drive and an opportunity to listen to it yesterday. 
-                  Overall, it’s legitimately a good album and very much in line with Macklemore’s style, but I NEED is hands down…
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  <br>
-                  <br>
-                  <a href="./blog-posts/whatdoyouneed.html">
-                    <button>read more</button>
-                  </a>
-                </p>
-                
+              <div class="portfolio-item filter-app">
+              <a href="./blog-posts/whatdoyouneed.html">
+                <img src="./assets/img/playlist-covers/Plain-temp-playlist-covers/loss.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>What do you need?</h4>
+                  <p>5 minute read</p>
+                  <a href="./assets/img/playlist-covers/Plain-temp-playlist-covers/loss.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
+                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
+                </div>
+              </a>
               </div>
             </div><!-- End testimonial item -->
-
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <h3>Soak Up Every Moment</h3>
-                <h4>4 minute read</h4>
-                <br>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  This week I called my great grandma like I always strive to do. As usual, she didn’t keep me very long saying three minutes into the conversation, “well, everything’s good here”,
-                   and then me finding some way creative way to keep the conversation going even two minutes longer. But this time I…
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  <br>
-                  <br>
-                  <a href="./blog-posts/soak-up-every-moment.html">
-                    <button>read more</button>
-                  </a>
-                </p>
-                
+              <div class="portfolio-item filter-app">
+              <a href="./blog-posts/soak-up-every-moment.html">
+                <img src="./assets/img/playlist-covers/Plain-temp-playlist-covers/rock n roll.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Soak Up Every Moment</h4>
+                  <p>4 minute read</p>
+                  <a href="./assets/img/playlist-covers/Plain-temp-playlist-covers/rock n roll.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
+                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
+                </div>
+              </a>
               </div>
             </div><!-- End testimonial item -->
-
             <div class="swiper-slide">
-              <div class="testimonial-item">
-                <h3>Why Create?</h3>
-                <h4>3 minute read</h4>
-                <br>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Have you ever thought to yourself, “I would love to create something and share it with the world”? Maybe it was music that inspired you to write songs. 
-                  Maybe it was YouTube that inspired you to make videos. Maybe it was a picture that inspired you to be an artist. Or maybe…
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  <br>
-                  <br>
-                  <a href="./blog-posts/why-create.html">
-                    <button>read more</button>
-                  </a>
-                </p>
-                
+              <div class="portfolio-item filter-app">
+              <a href="./blog-posts/why-create.html">
+                <img src="./assets/img/playlist-covers/Plain-temp-playlist-covers/pop-ular.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Why Create?</h4>
+                  <p>3 minute read</p> 
+                  <a href="./assets/img/playlist-covers/Plain-temp-playlist-covers/pop-ular.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"></a>
+                  <!-- <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox details-link" title="Portfolio Details">></i></a> -->
+                </div>
+              </a>
               </div>
-            </div><!-- End testimonial item -->
-
+              </div><!-- End testimonial item -->
           </div>
-          <div class="swiper-pagination"></div>
+          
+          
         </div>
 
       </div>
     </section><!-- End Testimonials Section -->
+    <br>
 
     <!-- ======= Portfolio Section ======= -->
     
@@ -698,101 +316,75 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-3">
-        <img src="assets-og/img/img_2197.jpg.webp" class="img-fluid" style="max-height: 300px;" alt="">
+        <img src="assets/img/img_2197.jpg.webp" class="img-fluid" style="max-height: 300px;" alt="">
       </div>
       <div class="col-lg-6 pt-4 pt-lg-0" style="max-height: 500px; overflow: auto;">
-        <h4>Noah Wiley, Playlist Curator and Primary Contributor</h4>
+        <h4>Noah Wiley</h4>
         <p>
-          Hey, I’m a business administration student at Messiah University and will be graduating in May of this year (2023). Inspired by Jon Foreman, I always thought it would be cool to drop out of college, but it’s starting to look like a lost dream.</p>
+          INSERT TEXT HERE, paragraph 1
+        </p>
 
-        <p>Really though, school does not define me. I’m very much interested in business, but my other passions include my faith, friends, and football (that’s accidental alliteration right there). Oh, and music!</p>
+        <p>
+          INSERT TEXT HERE, paragraph 2
+        </p>
 
-        <p>After several years of listening to music on my own Spotify account (forget sharing one with your brothers),
-          I started to notice some common themes amongst the songs that I listened to. Often times this theme would stretch into a diverse set of genres, but its impact on me remained.
-          Finding value in these songs, I began making playlists to compile them and planned to one day share them for the benefit of others. Well, here we are today and I’m glad to have your interest!
-          For real, my hope is that these playlists and written thoughts will serve as a medium between you and the blessing of these artist’s work.</p>
-        <ul>
-          <li>Favorite artist/band: Switchfoot</li>
-          <li>Top genre: Country</li>
-          <li>Age at first concert: &lt;0 </li>
-        </ul>
+        <p>
+          INSERT TEXT HERE, paragraph 3
+        </p>
       </div>
     </div>
   </div>
 </section>
 <!-- End About Section -->
-
-    
-
-
-    <!-- ======= Contact Section =======
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
+<br>
+<section id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2 style="margin-bottom: 1px;"">Contact Me</h2>
+    </div>
+    <p style="font-size: medium; text-align: center;">
+      INSERT TEXT HERE (text for the contact section)
+    </p>
+    <div class="form-container">
+      <form action="https://fabform.io/f/ndd5Hsi" method="post" class="php-email-form"> 
         <div class="row">
-
-          <div class="col-lg-6">
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <i class="bx bx-map"></i>
-                  <h3>Our Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bx-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com<br>contact@example.com</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bx-phone-call"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
-                </div>
-              </div>
-            </div>
-
+          <div class="col-md-6 form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" id="name" required>
           </div>
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" id="email" required>
           </div>
-
         </div>
+        <div class="form-group mt-3">
+          <label for="songSuggestion">Message</label>
+          <textarea class="form-control" name="songSuggestion" rows="5" required></textarea>
+        </div>
+        <div class="text-center mt-3">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 
-      </div>
-    </section>End Contact Section -->
+<style>
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  display: block;
+}
+</style>
 
   </main><!-- End #main -->
 
@@ -865,15 +457,15 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets-og/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets-og/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets-og/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets-og/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets-og/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets-og/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets-og/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
